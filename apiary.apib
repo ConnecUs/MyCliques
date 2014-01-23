@@ -1,0 +1,47 @@
+FORMAT: 1A
+HOST: http://www.google.com
+
+# ConnecUs Api
+ConnecUs API is a *personal link saving* service, that is used to save important links that connect the world to your stuff.
+
+# Group Cliques
+Cliques related resources of the **Cliques API**
+
+## Cliques Collection [/cliques]
+### List all Cliques [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "title": "Jogging in park"
+        }, {
+          "id": 2, "title": "Pick-up posters from post-office"
+        }]
+
+### Create a Clique [POST]
++ Request (application/json)
+
+        { "title": "Buy cheese and bread for breakfast." }
+
++ Response 201 (application/json)
+
+        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+
+## Clique [/cliques/{id}]
+A single Clique object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Clique to perform action with. Has example value.
+
+### Retrieve a Clique [GET]
++ Response 200 (application/json)
+
+    + Header
+
+            X-My-Header: The Value
+
+    + Body
+
+            { "id": 2, "title": "Pick-up posters from post-office" }
+
+### Remove a Clique [DELETE]
++ Response 204
