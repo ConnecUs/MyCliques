@@ -1,4 +1,4 @@
 MyCliques
 =========
 
-ConnecUs Cliques to inportant links and connections with want to have always available.
+ConnecUs Cliques to important links and connections you want to have always available.
